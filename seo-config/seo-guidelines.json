@@ -1,0 +1,111 @@
+{
+  "title_format": {
+    "max_length": 60,
+    "include_brand": true,
+    "separator": "|",
+    "case": "title"
+  },
+  "meta_description": {
+    "max_length": 160,
+    "include_cta": true,
+    "required_elements": ["main_keyword", "value_proposition"]
+  },
+  "content_structure": {
+    "headings": {
+      "h1": {
+        "count": 1,
+        "include_keyword": true
+      },
+      "h2": {
+        "min_count": 2,
+        "max_count": 5,
+        "include_secondary_keywords": true
+      }
+    },
+    "paragraphs": {
+      "max_length": 150,
+      "intro_max_length": 100
+    },
+    "lists": {
+      "recommended": true
+    }
+  },
+  "keywords": {
+    "primary": {
+      "density": {
+        "min": 1.0,
+        "max": 2.5,
+        "optimal": 1.8
+      },
+      "placement": [
+        "title",
+        "h1",
+        "first_paragraph",
+        "url"
+      ]
+    },
+    "secondary": {
+      "count": {
+        "min": 2,
+        "max": 5
+      },
+      "placement": [
+        "h2",
+        "content_body"
+      ]
+    }
+  },
+  "internal_linking": {
+    "count": {
+      "min": 2,
+      "max": 5
+    },
+    "anchor_text": {
+      "include_keywords": true,
+      "natural_language": true
+    }
+  },
+  "images": {
+    "featured_image": {
+      "required": true,
+      "alt_text": {
+        "include_keyword": true
+      }
+    },
+    "content_images": {
+      "count": {
+        "min": 1,
+        "optimal": 3
+      },
+      "alt_text": {
+        "required": true,
+        "include_context": true
+      }
+    }
+  },
+  "schema_markup": {
+    "types": [
+      "Article",
+      "BlogPosting",
+      "WebPage"
+    ],
+    "required_properties": [
+      "headline",
+      "datePublished",
+      "author",
+      "publisher",
+      "image"
+    ]
+  },
+  "social_sharing": {
+    "twitter": {
+      "card_type": "summary_large_image",
+      "title_max_length": 70,
+      "description_max_length": 200
+    },
+    "facebook": {
+      "title_max_length": 60,
+      "description_max_length": 200
+    }
+  }
+}
