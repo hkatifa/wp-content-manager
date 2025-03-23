@@ -1,0 +1,29 @@
+{
+  "wordpress_sites": [
+    {
+      "name": "example-site",
+      "url": "https://example.com",
+      "webhook_url": "https://example.com/wp-json/wpghs/v1/sync",
+      "api_base": "https://example.com/wp-json/wp/v2",
+      "content_types": ["post", "page"],
+      "synced_folders": {
+        "posts": "posts",
+        "pages": "pages",
+        "images": "wp-content/uploads"
+      }
+    }
+  ],
+  "image_sources": [
+    {
+      "name": "envato",
+      "type": "envato",
+      "api_key": "YOUR_ENVATO_API_KEY_HERE"
+    }
+  ],
+  "seo": {
+    "meta_title_max_length": 60,
+    "meta_description_max_length": 160,
+    "keyword_density_target": 2.0,
+    "enable_schema_markup": true
+  }
+}
